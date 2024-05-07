@@ -178,9 +178,9 @@ const Cart = () => {
             <Text>Cart is empty</Text>
           </View>
         )}
-        {cartList.length && (
+        {/* {cartList.length && (
           <FlatList data={cartList} renderItem={RenderItem}></FlatList>
-        )}
+        )} */}
       </View>
       {cartList.length > 0 && (
         <View style={styles.checkOut}>
@@ -199,7 +199,6 @@ const Cart = () => {
       {visible && <Loader></Loader>}
     </View>
   );
-  
 };
 const styles = StyleSheet.create({
   mainView: {
